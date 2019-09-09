@@ -1,0 +1,44 @@
+
+var mouthX = 210
+var mouthY = 300
+
+var eyeSize = 55
+function setup() {
+  // put setup code here
+  stroke("grayscale");
+  createCanvas(560,750);
+  pointX = width/2;
+  pointY = width/2;
+  // R, G & B integer values
+background(255, 204, 0);
+}
+
+function draw() {
+  // put drawing code here
+  // default fill,stroke,strokeWeight
+  fill(255);
+  fill(0,0,255);//rgb
+//left eyeSize
+  ellipse(56, 46, eyeSize,eyeSize);
+
+  //add in the x direction and subtract in the y direction (right) + x direction
+  //right eyeSize
+ellipse(450,46,eyeSize,eyeSize)
+
+//nose
+// Draw a circle at location
+circle(250,200,35);
+
+//mouth
+fill('white');
+rect(mouthX,mouthY,100,75);
+
+fill(255);//grayscale
+
+//mole
+strokeWeight(5);
+
+
+
+
+}
