@@ -1,10 +1,10 @@
 
+
 function setup () {
 // put setup code here
 
 }
-function draw() {
+function draw()
 //put drawing code here
-
 }
 //end of draw
