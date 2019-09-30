@@ -98,5 +98,5 @@ if(currentImage== 0){
   // show Bird
   image(bird,0,0,bird.width/4,bird.height/4);
 }else if (currentImage== 7){
-
-}// end of draw
+}
+}

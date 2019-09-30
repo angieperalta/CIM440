@@ -3,11 +3,9 @@
 // dinosaur "Rupenhorn Dinosaur #4" by Kristian_Laban is licensed under CC BY-NC 2.0 https://search.creativecommons.org/photos/96213ba5-e9b6-4f2f-91e4-da28b9fcad22
 // horse "Horses in the Smokies" by coffey67 is licensed under CC BY-NC-ND 2.0 https://search.creativecommons.org/photos/0e25425a-a41c-49b0-9125-f0fa24c29fb4
 // cat "Cats @ $HOME" by Amayita is licensed under CC BY-NC-ND 2.0 https://search.creativecommons.org/photos/1ef8e2e5-6171-419f-b99e-f3c6c341720c
-// rabbit "Rabbits / Kaninchen" by Robobobobo is licensed under CC BY-SA 2.0 https://search.creativecommons.org/photos/4f5362c8-a6b2-42dd-a999-37e242094e37
-// bird "seagull bird" by watts_photos is licensed under CC BY 2.0 https://search.creativecommons.org/photos/7c8d1e08-e6f2-49f5-80ee-4ab53ffb3289
 
-var puppy, dinosaur, sloth, cat, horse, rabbit, bird;
-var pButton, dButton, sButton, cButton, hButton, rButton, bButton;
+var puppy, dinosaur, sloth, cat, horse;
+var pButton, dButton, sButton, cButton, hButton;
 
 var currentImage = 0;
 
@@ -19,8 +17,6 @@ dinosaur = loadImage("images/dinosaur.jpg");
 sloth = loadImage("images/sloth.jpg");
 cat = loadImage("images/cats.jpg");
 horse = loadImage("images/horse.jpg");
-rabbit = loadImage("images/rabbit.jpg");
-bird = loadImage("images/bird.jpg");
 }
 
 function setup() {
@@ -54,16 +50,6 @@ hButton.mousePressed(function(){
   currentImage = 4;
 });
 
-rButton = createButton("Rabbit");
-rButton.mousePressed(function(){
-  currentImage = 5;
-});
-
-bButton = createButton("Bird");
-bButton.mousePressed(function(){
-  currentImage = 6;
-});
-
 }
 
 function draw() {
@@ -88,15 +74,14 @@ if(currentImage== 0){
 }else if(currentImage==4){
 
   //show horse
-  image(horse,0,0,horse.width/4,horse.height/4);
-}else if (currentImage== 5){
+  image(horse,0,0,sloth.width/4, cat.height/4);
+}else if (currentImage == 5){
 
-  // show Rabbit
-  image(rabbit,0,0,rabbit.width/4,rabbit.height/4);
-}else if (currentImage== 6){
+}
 
-  // show Bird
-  image(bird,0,0,bird.width/4,bird.height/4);
-}else if (currentImage== 7){
 
-}// end of draw
+
+
+
+
+}
