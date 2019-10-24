@@ -17,7 +17,7 @@ if(millis() > interval);{
   //do something
   prevMillis = millis();
   counter = counter + 1;
-  console.log(counter) 
+  console.log(counter)
 }
 
 

@@ -11,7 +11,7 @@ var wavesMove = true;
 var waveStart = false;
 
 var hitX = [575];
-var hitY = [275];
+var hitY = [575];
 
 
 var waves;
@@ -33,19 +33,19 @@ var tree;
 
 ////
 
-var dolphinsX = 0;
+var dolphinsX = 10;
 var dolphinsY = 0;
 var dolphinsMove = true;
 
 var dolphins;
 
-var dolphinStart = false;
+var dolphinStart;
 
 hitdolphinSize = [25];
 
 var hitdolphinX = [575];
 
-var hitdolphinY = [475];
+var hitdolphinY = [275];
 
 //
 
@@ -91,23 +91,23 @@ function draw(){
 
 
 fill("blue");
-stroke("teal")
+stroke("blue")
 rect(hitX[0],hitY[0], hitSize, hitSize);
 // wavessss
 
 fill("green");
-stroke("black");
+stroke("green");
 rect(hittreeX[0], hittreeY[0], hittreeSize, hittreeSize);
 // treeeee
 
 
 fill("grey");
-stroke("black");
+stroke("grey");
 rect(hitcloudX[0], hitcloudY[0], hitcloudSize, hitcloudSize);
 // clouds
 
 fill("yellow");
-stroke("black");
+stroke("yellow");
 rect(hitdolphinX[0], hitdolphinY[0],hitdolphinSize, hitdolphinSize);
 
   if(sunY > 500){
@@ -182,26 +182,24 @@ function mousePressed(){
     waveStart = true;
   /// end of waves
   }
-function mousePressed(){
+
   if(mouseX > hitX[0] && mouseX < hittreeX[0] + hittreeSize && mouseY > hittreeY[0] && mouseY < hittreeY + hittreeSize){
     console.log("Click Tree");
     treeStart = true;
   }
 
-  // end of treesss
-function mousePressed(){
   if(mouseX > hitX[0] && mouseX < hitcloudX[0] + hitcloudSize && mouseY > hitcloudY[0] && mouseY < hitcloudY + hitcloudSize){
     console.log("Click Clouds");
     cloudStart = true;
+
   }
 
-function mousePressed(){
   if(mouseX > hitX[0] && mouseX < hitdolphinX[0] + hitdolphinSize && mouseY > hitdolphinY[0] && mouseY < hitdolphinY + hitdolphinSize){
     console.log("Click Dolphin");
     dolphinStart = true;
 
+
   }
 }
-
 
 // end of DRAW
