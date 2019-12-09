@@ -158,6 +158,7 @@ if(mouseX > hitcloudX[0] && mouseX < hitcloudX[0] + hitcloudSize && mouseY > [0]
     //cloudStart = true;
 }
 
+
 }
 
 // end of DRAW

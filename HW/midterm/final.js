@@ -4,6 +4,7 @@ var vid, vid2,vid3,vid4;
 var font;
 var currentVideo;
 
+
 var counter = 0;
 
 // soundFile == 13-20 seconds long
@@ -59,7 +60,7 @@ console.log("time" + currentVideo.time());
 if(currentVideo.time() >= currentVideo.duration()){
 //next video
   // lets say you have 5 videos, write an if statement that makes sure your counter does not go past 5
-  counter = counter + 4;
+  counter = counter + 1;
   if(counter == 1){
     currentVideo = vid2;
     currentVideo.play();
@@ -69,6 +70,8 @@ if(currentVideo.time() >= currentVideo.duration()){
   }else if(counter == 3){
       currentVideo = vid4;
       currentVideo.play();
+  }else if(counter == 4){
+
   }
 
 if(counter == 1){
